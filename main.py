@@ -10,8 +10,9 @@ def aws_flask_app(name):
         return "Hello, {}! I'm the AWS_FLASK_APP! \n".format(name)
     elif request.method=='POST':
         user_data = request.form["body"]
+        key = request.form["key"]
         res = {'status': '200'}
-        return "Hello, {}! I'm the AWS_FLASK_APP! ".format(name) + "The data that you entered is: {}\n".format(user_data)
+        return "Hello, {}! I'm the AWS_FLASK_APP! ".format(name) + "The sentence that you entered is: {}\n".format(user_data) + "The key you entered is {}.".format(key)
 
 
 if __name__ == '__main__':
