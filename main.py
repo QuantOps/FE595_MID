@@ -57,3 +57,42 @@ def aws_flask_app():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
+
+
+#from flask import Flask
+#from flask import request
+#from nltk.util import ngrams
+#import nltk
+#
+#app = Flask(__name__)
+
+
+#@app.route("/")
+#def home_page():
+#    return "This is a Flask NLP Service"
+
+
+#@app.route("/n_grams/<num>/<text>/")
+#def run_ngrams(text, num):
+#    text_list = text.split()
+#    try:
+#        num = int(num)
+#    except ValueError:
+#        return "Num must be a number"
+#    if num <= 0:
+#        return "Num must greater than 0"
+#    n_grams = ngrams(text_list,num)
+#    return ' '.join([','.join(grams) for grams in n_grams])
+
+
+#@app.route("/tokenize/<text>/")
+#def get_tokens_and_tags(text):
+#   tokens = nltk.word_tokenize(text)
+#    tags = nltk.pos_tag(tokens)
+#    return ' '.join(['='.join(tag) for tag in tags])
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+
+
