@@ -7,6 +7,7 @@ import nltk
 from nltk.util import ngrams
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('averaged_perceptron_tagger')
 
 
 app = Flask(__name__)
