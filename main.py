@@ -17,9 +17,9 @@ nltk.download('wordnet')
         
 # Simple list to string conversion method taken from https://www.geeksforgeeks.org/python-program-to-convert-a-list-to-string/
 def listToString(s): 
-    str1 = ""
+    str1 = ''
     for ele in s: 
-        str1 = str1 + " " + ele  
+        str1 = str1 + ' ' + ele  
     return str1 
 
 
@@ -276,4 +276,3 @@ def lem(text):
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
     
-
